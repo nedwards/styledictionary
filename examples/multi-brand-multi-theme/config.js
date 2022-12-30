@@ -1,7 +1,7 @@
 const fs = require('fs')
 const StyleDictionary = require('style-dictionary')
 
-// Will return array of folders or files from a folder
+// Will return an array of file/folder names from a directory
 function getFilesArray(path) {
   if (fs.existsSync(path)) {
     const files = fs.readdirSync(path)
